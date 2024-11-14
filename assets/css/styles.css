@@ -7,15 +7,15 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(14, 98%, 50%);
+  --first-color: rgb(201, 104, 104);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 64%);
-  --body-color: hsl(0, 0%, 87%);
-  --container-color: hsl(0, 0%, 83%);
+  --body-color: rgb(254, 249, 242);
+  --container-color: rgb(255, 244, 234);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -106,7 +106,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --first-color: hsl(14, 80%, 50%);
+  --first-color: rgb(201, 104, 104);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -125,7 +125,7 @@ body.dark-theme{
 
 .dark-theme .section__title-1::after,
 .dark-theme .section__title-2::after{
-  background-color: hsla(14, 70%, 50%, .2);
+  background-color: rgb(56, 75, 112);
 }
 
 .dark-theme :is(.home__arrow, .home__line, .about__line){
@@ -134,7 +134,7 @@ body.dark-theme{
 
 .dark-theme .home__description b{
   background: linear-gradient(90deg,
-              hsla(14, 80%, 50%, .3),
+              rgb(58, 109, 140),
               hsla(14, 80%, 50%, .0) )
 }
 
@@ -200,7 +200,7 @@ body.dark-theme{
   content: "";
   width: 40px;
   height: 28px;
-  background-color: hsla(14, 98%, 50%, .2);
+  background-color: rgb(106, 154, 176);
   position: absolute;
   top: -4px;
   right: -8px;
@@ -412,6 +412,7 @@ body.dark-theme{
 
 .home__img{
   position: relative;
+  border-radius: 25px;
   z-index: 10;
 }
 
@@ -423,6 +424,7 @@ body.dark-theme{
   bottom: -.75rem;
   right: -.75rem;
   border: 4px solid var(--black-color);
+  border-radius: 25px;
   z-index: 5;
   transition: background-color .4s;
 }
@@ -487,7 +489,7 @@ body.dark-theme{
 }
 
 .home__description b{
-  background: linear-gradient(90deg, hsla(14, 98%, 50%, .3), hsla(14, 98%, 50%, 0));
+  background: linear-gradient(90deg, rgb(106, 154, 176), hsla(14, 98%, 50%, 0));
 }
 
 .home__scroll{
@@ -598,6 +600,7 @@ body.dark-theme{
 .about__img{
   position: relative;
   border: 4px solid var(--white-color);
+  border-radius: 25px;
   z-index: 1;
 }
 
@@ -611,6 +614,7 @@ body.dark-theme{
   width: 150px;
   height: 385px;
   background-color: var(--body-color);
+  border-radius: 25px 25px 0 0 ;
   top: -2.5rem;
   right: -3.5rem;
   border-bottom: 4px solid var(--first-color);
