@@ -117,16 +117,3 @@ sr.reveal(`.services__card, .projects__card`, {interval: 100})
 
 /*=============== FORM ACTIVATION ===============*/
 
-function send_Email () {
-    Email.send({ 
-        Host : "smtp.gmail.com",
-        Username : "noorxcalma@gmail.com",
-        Password : "NoorXGmail#7",
-        To : 'noorxcalma@gmail.com',
-        From : document.getElementById('email').value,
-        Subject : "New Contact Form Enquiry | NRXO",
-        Body : "And this is the body"
-    }).then(
-    message => alert(message)
-    );
-}

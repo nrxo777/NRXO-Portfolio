@@ -556,6 +556,21 @@
       <!--=============== Form Activation JS ==============-->
       <script src="https://smtpjs.com/v3/smtp.js"></script>
 
+      <script>
+         function send_Email () {
+            Email.send({ 
+               Host : "smtp.gmail.com",
+               Username : "noorxcalma@gmail.com",
+               Password : "NoorXGmail#7",
+               To : 'noorxcalma@gmail.com',
+               From : document.getElementById('email').value,
+               Subject : "New Contact Form Enquiry | NRXO",
+               Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+      }
+      </script>
 
    </body>
 </html>
