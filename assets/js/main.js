@@ -114,3 +114,19 @@ sr.reveal(`.home__name, .home__info, .about__container, .section__title-1,
             .about__info, .contact__data, .contact__social`, {origin: 'left'})
 
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
+
+/*=============== FORM ACTIVATION ===============*/
+
+function send_Email () {
+    Email.send({
+        Host : "smtp.mailendo.com",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
+}
