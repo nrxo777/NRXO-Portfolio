@@ -115,5 +115,3 @@ sr.reveal(`.home__name, .home__info, .about__container, .section__title-1,
 
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
 
-/*=============== FORM ACTIVATION ===============*/
-
